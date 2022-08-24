@@ -11,7 +11,7 @@ function palindrome(str) {
     if (j - i > 0) {
       // check if leftValue is alphanumeric
       if ((leftValue >= 65 && leftValue <= 90) || (leftValue >= 48 && leftValue <= 57)) {
-        // check if rightValue is alphabet
+        // check if rightValue is alphanumeric
         if ((rightValue >= 65 && rightValue <= 90) || (rightValue >= 48 && rightValue <= 57)) {
           // check if leftValue equals to rightValue
           if (leftValue == rightValue) {
@@ -24,14 +24,14 @@ function palindrome(str) {
             return false;
           }
         }
-        // if the rightValue is not an alphabet
+        // if the rightValue is not an alphanumeric
         // shift the rightValue 1 char to left
         else {
           j -= 1;
           continue;
         }
       }
-      // if the leftValue is not an alphabet
+      // if the leftValue is not analphanumeric
       // shift the leftValue 1 char to right
       else {
         i += 1;
